@@ -59,8 +59,8 @@ Valitsin kohdan "Create" ja nimesin holvini nimellä "Testi". Valitsin tiedostos
 Luotuani holvin tein kaksi toisiinsa liittyvää uutta sivua. Linkitin ne toisiinsa näyttääkseni kuinka Obsidian toimii. Myös tämä raportti on kirjoitettu Obsidianissa.
 ![[Pasted image 20240821233346.png]]
 # Lähteet
-Tehtävänannot ja kurssi https://terokarvinen.com/linux-palvelimet/#laksyt
-Install Debian on Virtualbox - Updated 2023 https://terokarvinen.com/2021/install-debian-on-virtualbox/#first-login
-Raportin kirjoittaminen https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
-What is Free Software? https://www.gnu.org/philosophy/free-sw.html#four-freedoms
-Installing Obsidian https://help.obsidian.md/Getting+started/Download+and+install+Obsidian
+- Tehtävänannot ja kurssi https://terokarvinen.com/linux-palvelimet/#laksyt
+- Install Debian on Virtualbox - Updated 2023 https://terokarvinen.com/2021/install-debian-on-virtualbox/#first-login
+- Raportin kirjoittaminen https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
+- What is Free Software? https://www.gnu.org/philosophy/free-sw.html#four-freedoms
+- Installing Obsidian https://help.obsidian.md/Getting+started/Download+and+install+Obsidian
