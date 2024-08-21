@@ -54,10 +54,12 @@ Näiden tietojen avulla suoritin komennon ```chmod u+x Obsidian-1.6.7.AppImage``
 Ohjelman pystyi nyt käynnistämään komennolla ``Obsidian-1.6.7.AppImage``
 ## Holvin luonti
 Loin oman holvini virtuaalikoneella Obsidianiin vaikka en sitä tule käyttämään. 
-![[Pasted image 20240821232927.png]] 
+![Pasted image 20240821232927](https://github.com/user-attachments/assets/7c485186-5fa2-460a-b396-069736a5c5a6)
+ 
 Valitsin kohdan "Create" ja nimesin holvini nimellä "Testi". Valitsin tiedostosijainniksi /home/kreatiini/Desktop. 
 Luotuani holvin tein kaksi toisiinsa liittyvää uutta sivua. Linkitin ne toisiinsa näyttääkseni kuinka Obsidian toimii. Myös tämä raportti on kirjoitettu Obsidianissa.
-![[Pasted image 20240821233346.png]]
+![Pasted image 20240821233346](https://github.com/user-attachments/assets/6b422129-fcbf-4e5d-b823-8b6ff5385d73)
+
 # Lähteet
 - Tehtävänannot ja kurssi https://terokarvinen.com/linux-palvelimet/#laksyt
 - Install Debian on Virtualbox - Updated 2023 https://terokarvinen.com/2021/install-debian-on-virtualbox/#first-login
