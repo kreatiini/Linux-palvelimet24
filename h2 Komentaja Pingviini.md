@@ -1,4 +1,8 @@
-# Tiivistelmä tehtävästä ja sen kulusta sekä laitetiedot
+# Tiivistelmä tehtävästä h2 Komentaja Pingviini ja sen kulusta sekä laitetiedot
+### Tiivistelmä: Tehtävä oli moniosainen. Tehtävässä tutustuttiin yleisiin komentoihin sekä hakemistoihin Linux ympäristössä. Tämän lisäksi harjoiteltiin asentamaan uusia ohjelmia komentokehotteesta, kokeiltiin grep komentoa ja putkia. Lopuksi tarkasteltiin oman laitteen raudan tietoja.
+Tehtävä ei alkanut omalta osaltani suunnitellusti. Ensimmäisen kolmen ohjelman asennus epäonnistui. En ymmärtänyt niihin tarvittavia laajennuksia tai niiden asentamista. Toki kaksi kolmesta olisi mahdollista asentaa `sudo apt-get install` komennolla. Tätä tapaa ei kuitenkaan mainittu Github sivuilla. Yritin siis asentaa ohjelmat Github sivujen suosittelemalla tavalla tässä onnistumatta. Valitsin siis uudet kolme ohjelmaa jotka asensin sujuvasti. 
+Hakemistot ja yleisimmät komennot olivat minulle jo jossain määrin tuttuja. Ne eivät aiheuttaneet suurempaa päänvaivaa. Pipes `|` oli hieman tuoreempi tuttavuus. Olin toki törmännyt siihen aiemmin. En kuitenkaan ollut käyttänyt tätä tapaa. 
+Raudan analysointi osoittautui haasteelliseksi. Se osio jäi hieman tyngäksi. 
 ### Laitetiedot: 
 - Näytönohjain: Asus GeForce RTX 3070 Ti ROG Strix - OC Edition
 - Virtalähde: Corsair 750W SF Series SF750, modulaarinen SFX-virtalähde
