@@ -148,12 +148,12 @@ Pipes eli `|` avulla eri komentoja pystytään ketjuttamaan. Tästä hyvänä es
 Aloitan asentamalla lshw:n komennolla `sudo apt-get install lshw` jonka jälkeen ajan komennon `sudo lshw -short sanitize` : ![Pasted image 20240902231227](https://github.com/user-attachments/assets/06509194-5a41-49cc-8c5e-087424aa7e49) ![Pasted image 20240902231243](https://github.com/user-attachments/assets/ce8bcf9e-579e-4a5c-a892-014058cf9c4c)
 
 
-Aloitetaan **bus** luokasta. Tämän luokan tehtävänä on toimia prosessorin ja jonkin laitteen välillä. Esimerkiksi tästä listauksesta löytyy VirtualBoxin, USB ja PCI porttien bus ohjaimet.
-Seuraavana **memory** luokka. Memory tarkoittaa muistia joka toimii nopeana tapana tallentaa tietoa prosessorin käsittelyn apuna. Listauksessa näkyy käytettävissä oleva muistin määrä.
-**Processor** tarkoittaa yksinkertaisesti prosessoria. Prosessori käsittelee tietoa nopeasti tekemällä erilaisia loogisia toimia. Omasta koneestani löytyy 8-ytiminen AMD Ryzen.
-**Input** luokasta löytyy eri syöttölaitteet. Esimerkiksi näppäimistö, virtanäppäin tai hiiren integraatio VirtualBoxiin.
-**Disk** kertoo paljonko massamuistia on käytössä ja minkä nimisiä muistilaitteita on yhdistettynä. Omassa laitteessani näyttää olevan 53gb kokonaisuudessaan muistia käytössä.
-**Volume** kohdasta näkee miten massamuisti on jaettu. Tässä tapauksessa 37gb on tavallisessa tiedostokäytössä ja 12gb on swap muuistin käytössä. Swap muisti toimii keskusmuistin laajennuksena. 
+- **bus** luokka: Tämän luokan tehtävänä on toimia prosessorin ja jonkin laitteen välillä. Esimerkiksi tästä listauksesta löytyy VirtualBoxin, USB ja PCI porttien bus ohjaimet.
+- Seuraavana **memory** luokka. Memory tarkoittaa muistia joka toimii nopeana tapana tallentaa tietoa prosessorin käsittelyn apuna. Listauksessa näkyy käytettävissä oleva muistin määrä.
+ -**Processor** tarkoittaa yksinkertaisesti prosessoria. Prosessori käsittelee tietoa nopeasti tekemällä erilaisia loogisia toimia. Omasta koneestani löytyy 8-ytiminen AMD Ryzen.
+- **Input** luokasta löytyy eri syöttölaitteet. Esimerkiksi näppäimistö, virtanäppäin tai hiiren integraatio VirtualBoxiin.
+- **Disk** kertoo paljonko massamuistia on käytössä ja minkä nimisiä muistilaitteita on yhdistettynä. Omassa laitteessani näyttää olevan 53gb kokonaisuudessaan muistia käytössä.
+- **Volume** kohdasta näkee miten massamuisti on jaettu. Tässä tapauksessa 37gb on tavallisessa tiedostokäytössä ja 12gb on swap muistin käytössä. Swap muisti toimii keskusmuistin laajennuksena. 
 
 ## Lähteet:
 Tehtävät perustuvat Tero Karvisen Linux Palvelimet kurssin tehtäviin.https://terokarvinen.com/linux-palvelimet/#h2-komentaja-pingviini
