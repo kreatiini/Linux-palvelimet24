@@ -150,7 +150,7 @@ Aloitan asentamalla lshw:n komennolla `sudo apt-get install lshw` jonka jälkeen
 
 - **bus** luokka: Tämän luokan tehtävänä on toimia prosessorin ja jonkin laitteen välillä. Esimerkiksi tästä listauksesta löytyy VirtualBoxin, USB ja PCI porttien bus ohjaimet.
 - Seuraavana **memory** luokka. Memory tarkoittaa muistia joka toimii nopeana tapana tallentaa tietoa prosessorin käsittelyn apuna. Listauksessa näkyy käytettävissä oleva muistin määrä.
- -**Processor** tarkoittaa yksinkertaisesti prosessoria. Prosessori käsittelee tietoa nopeasti tekemällä erilaisia loogisia toimia. Omasta koneestani löytyy 8-ytiminen AMD Ryzen.
+- **Processor** tarkoittaa yksinkertaisesti prosessoria. Prosessori käsittelee tietoa nopeasti tekemällä erilaisia loogisia toimia. Omasta koneestani löytyy 8-ytiminen AMD Ryzen.
 - **Input** luokasta löytyy eri syöttölaitteet. Esimerkiksi näppäimistö, virtanäppäin tai hiiren integraatio VirtualBoxiin.
 - **Disk** kertoo paljonko massamuistia on käytössä ja minkä nimisiä muistilaitteita on yhdistettynä. Omassa laitteessani näyttää olevan 53gb kokonaisuudessaan muistia käytössä.
 - **Volume** kohdasta näkee miten massamuisti on jaettu. Tässä tapauksessa 37gb on tavallisessa tiedostokäytössä ja 12gb on swap muistin käytössä. Swap muisti toimii keskusmuistin laajennuksena. 
