@@ -136,13 +136,16 @@ Avaan myös dpkg.log tiedoston komennolla `nano dpkg.log` josta näen minkälais
 https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
 ## d) The Friendly M: grep-komento (22.45)
 Tehtävänä on näyttää 2-3 kuvaavaa esimerkkiä grep-komennon käytöstä. En oikein tiedä mitä etsiä joten luon ensin muutaman tekstitiedoston eri hakemistoihin.
-Loin tiedoston omaan kotihakemistooni. Tämän jälkeen siirryin juurihakemistoon. Juurihakemistossa käytin komentoa `grep -r "Tama"` . Näin pystyin hakemaan grepillä merkkijonoa kaikista hakemistoista. Nyt grep näyttää koko reitin kyseiseen tiedostoon ja rivin jossa hakusana on.![Pasted image 20240902225852](https://github.com/user-attachments/assets/1dc1fbd3-4159-49cc-8204-92dc81ed557c)
+Loin tiedoston omaan kotihakemistooni. Tämän jälkeen siirryin juurihakemistoon. Juurihakemistossa käytin komentoa `grep -r "Tama"` . Näin pystyin hakemaan grepillä merkkijonoa kaikista hakemistoista. Nyt grep näyttää koko reitin kyseiseen tiedostoon ja rivin jossa hakusana on.
+![Pasted image 20240902225852](https://github.com/user-attachments/assets/1dc1fbd3-4159-49cc-8204-92dc81ed557c)
 
-Seuraavana kokeilen hakea samaa tiedostoa. Nyt haen kuitenkin `grep -i "tama" greippi.txt` . Ilman `-i` osaa komento ei löytäisi tiedostoani. Tällä lipulla grep ei välitä kirjainten koosta: ![Pasted image 20240902230304](https://github.com/user-attachments/assets/d51fd6f0-1ac5-4e92-b3ae-b6db0464acd2)
+Seuraavana kokeilen hakea samaa tiedostoa. Nyt haen kuitenkin `grep -i "tama" greippi.txt` . Ilman `-i` osaa komento ei löytäisi tiedostoani. Tällä lipulla grep ei välitä kirjainten koosta: 
+![Pasted image 20240902230304](https://github.com/user-attachments/assets/d51fd6f0-1ac5-4e92-b3ae-b6db0464acd2)
 
 
 ## e) Pipe: esimerkkejä putkien käytöstä (22.54)
-Pipes eli `|` avulla eri komentoja pystytään ketjuttamaan. Tästä hyvänä esimerkkinä `ls -l | more` . Näin pystytään listaamaan hakemiston tiedostot rivi kerrallaan ja näyttämään enemmän tietoa kyseisistä tiedostoista. ![Pasted image 20240902230950](https://github.com/user-attachments/assets/2dc5f703-6263-4a18-b11f-bef60dbf2fdf)
+Pipes eli `|` avulla eri komentoja pystytään ketjuttamaan. Tästä hyvänä esimerkkinä `ls -l | more` . Näin pystytään listaamaan hakemiston tiedostot rivi kerrallaan ja näyttämään enemmän tietoa kyseisistä tiedostoista. 
+![Pasted image 20240902230950](https://github.com/user-attachments/assets/2dc5f703-6263-4a18-b11f-bef60dbf2fdf)
 
 ## f) Raudan listaus ja analysointi lshw:n avulla(23.08)
 Aloitan asentamalla lshw:n komennolla `sudo apt-get install lshw` jonka jälkeen ajan komennon `sudo lshw -short sanitize` : ![Pasted image 20240902231227](https://github.com/user-attachments/assets/06509194-5a41-49cc-8c5e-087424aa7e49) ![Pasted image 20240902231243](https://github.com/user-attachments/assets/ce8bcf9e-579e-4a5c-a892-014058cf9c4c)
