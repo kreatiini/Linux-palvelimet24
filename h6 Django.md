@@ -36,4 +36,96 @@ Tämän jälkeen vuorossa Djangon asennus uuteen virtuaaliympäristöön. Ensin 
 Requirements.txt joka yleensä on tiedosto täynnä erilaisia riippuvuuksia ohjelmaa varten, nyt vain yksi. `micro requirements.txt` ja sinne kirjoitan `django`. Tallennuksen jälkeen `cat requirements.txt` varmistuakseni oikeinkirjoituksesta. Sitten itse asennus: `pip install -r requirements.txt` ja varmistus `django-admin --version`. ![image](https://github.com/user-attachments/assets/d8e36f0d-4334-43b7-a641-45452680a2fa)
 Seuraavassa kohdassa jossa pitäisi luoda projekti en pysty luomaan proejktia tähän hakemistoon sillä samanniminen hakemisto löytyy jo. Loin mielestäni ohjeiden mukaan hakemistot sekä tiedostot Apachelle. Tämän jälkeen käynnistin virtuaaliympäristön sinne. Loogisesti en kuitenkaan pysty aloittamaan samannimistä projektia kansioon jossa on jo hakemisto. Django luo `startproject` komennolla Djangon hakemiston annetulla nimellä. Ohjeissa ei ole mainintaa hakemiston vaihdosta tai olen liian väsynyt. Selaan ohjeita pidemmälle ja huomaan hakemistorakenteen olevan `home/tero/publicwsgi/teroco/teroco/wsgi.py`. Djangon luomaan hakemistoon verrattuna tämä projekti on siis luotu `teroco` hakemiston sisälle eikä `publicwsgi` hakemistoon. Päätän kuitenkin jättää asian hautumaan. Otan lyhyet yöunet ja koitan uudestaan. Eli lopetan nyt **rannekello 23.23 25.9.24** ja palaan asiaan aamulla. 
 
+**Rannekello 7.00 26.9.24** Tein herättyäni toisen koulutehtävän alta pois ja jatkoin Djangon parissa. Luin iltasaduksi dokumentaatiota Djangosta. En löytänyt muuta ratkaisua kuin pakottaa projekti lisäämällä komentoon `django-admin startproject kreatiini .` pisteen. 
+Seuraavana muokkaan kreatiininc.conf tiedostoa: `sudoedit /etc/apache2/sites-available/kreatiniinc.conf`. Kun sain projektin luotua ja aloin valmistelemaan conf tiedostoa, havaitsin olleeni oikeassa. Muista luoda uusi projekti aiemmin luodun samannimisen hakemiston sisälle vaikka sitä ei erikseen mainita. Minä en luonut mutta tämä toimii ehkä tälläkin rakenteella. ![image](https://github.com/user-attachments/assets/a8cbff22-6526-4f95-9e6f-5f205442c583)
+
+## Django Instant Customer Database Tutorial (Rannekello 0736 26.9.2024)
+Edellinen tehtävä ei lähtenyt toimimaan enkä löytänyt verkosta apuja. Aloitan sen alusta tämän tehtävän jälkeen. Loin ensin hakemiston `mkdir -p o/home/kreatiini/crm/` johon teen projektin ja virtuaaliympäristöt. ![image](https://github.com/user-attachments/assets/9737fc84-e4cc-4e77-bd70-3ac0ad425253)
+
+Loin tarvittavat env paketit:
+![image](https://github.com/user-attachments/assets/ff3b18bb-823c-4793-ae82-d9ed9d7edcd6)
+
+Aktivoin sen ja varmistin oikean sijainnin: 
+![image](https://github.com/user-attachments/assets/3621703a-e8ac-4271-b017-532b369b89a2)
+
+Loin requirements.txt tiedoston ja asensin djangon siitä. VArmistuin Djangon versiosta: 
+![image](https://github.com/user-attachments/assets/2e937f55-bcbc-4861-b71c-2d8a9c909a74)
+
+Loin uuden projektin ja käynnistin Djangon testipalvelimen: 
+![image](https://github.com/user-attachments/assets/7b572406-5d29-449f-9e17-1d22e0d041fd)
+
+Ja se toimii:
+![image](https://github.com/user-attachments/assets/8f565e2d-6fca-4ed7-83b3-c4f6d9099fda)
+
+### Admin interfacen luominen
+Päivitin tietokannat `./manage.py makemigrations` ja `./manage.py migrate`. Tämän jälkeen latasin salasanageneraattorin sekä tein käyttäjän itselleni. Suljin vahingossa terminaalin joten jouduin avaamaan uuden tässä kohtaa. Sain kuitenkin käyttäjän luotua ja admin näkymä toimii: 
+![image](https://github.com/user-attachments/assets/859e9a46-8be4-4d62-be3c-9b9f6313e3f3)
+
+Tein uuden käyttäjän ja lisäsin ryhmiin staff sekä superuser: ![image](https://github.com/user-attachments/assets/0a39ef46-a56e-441f-8355-14fdcd6b38c9)
+
+Pystyin esimerkiksi lisäämään ryhmiä tällä käyttäjällä: ![image](https://github.com/user-attachments/assets/b90c98e4-2827-40b4-b1c8-fd8fa8eae6fd) 
+Suljin taas serverin ja tein uuden kansion: ![image](https://github.com/user-attachments/assets/62e0b50e-8b23-4cef-87c9-512e66d498ed)
+Lisäsin crm sovelluksen settings.py tiedoston sovelluksiin: ![image](https://github.com/user-attachments/assets/fca415f6-793c-4bfe-8da4-ac4dc4799b4f)
+Tein malleihin uuden asiakasluokan: ![image](https://github.com/user-attachments/assets/a6fa01ef-b1c9-4909-b4b7-8cec5b989ed5)
+Ja loin ne:
+![image](https://github.com/user-attachments/assets/31be2302-d49b-4a7e-8047-8f3060d49082)
+
+Rekisteröin tietokannan: ![image](https://github.com/user-attachments/assets/6122670e-8c1a-4b0e-8bf3-08f84d41eb09)
+
+Ja se näkyy siellä: ![image](https://github.com/user-attachments/assets/65845e73-d7f4-4dd7-adc8-80eae21d1fbb)
+
+![image](https://github.com/user-attachments/assets/ef1d2268-cddf-4a19-a92e-65232bbc7070)
+
+Muutetaan nimet näkyviin muutamalla crm/models.py tiedostoa: ![image](https://github.com/user-attachments/assets/a7560559-3f4d-472d-8716-8c6e746c0c9e)
+
+![image](https://github.com/user-attachments/assets/0a77c16c-2f44-48ed-a905-631d7faafaa2)
+
+Ja nimet näkyvät ![image](https://github.com/user-attachments/assets/00105f69-73a2-41a0-8477-dc8b5bb629e3)
+
+Tehtävä tehty onnistuneesti **rannekello 0814 26.9.24** . Voin palata edelliseen tehtävään.
+
+## Django yritys 2 (Rannekello 0818 26.9.2024)
+Eilisen sekoilun jälkeen uusi yritys. Toivottavasti ehdin tehdä tämän ennen lähtöä. Apache2 on asennettuna, poistan eilen luomani kansiot ja aloitan puhtaalta pöydältä. Luon uudet tiedostot: `mkdir -p publicwsgi/kreatiininc/static` . Asetan uuden tekstin `echo "Tämä ei ole kultti" | tee publicwsgi/kreatiininc/static/index.html` Poistan apache sivut käytöstä `sudo a2dissite '*'`. Muokkaan aiemmin tekemääni kreatiininc.conf tiedostoa: `sudoedit /etc/apache2/sites-available/kreatiininc.conf`.
+![image](https://github.com/user-attachments/assets/f8901aee-6bce-45e6-8cb3-cd970b5b0d8f)
+![image](https://github.com/user-attachments/assets/671c1936-0635-46ce-b75c-90cb1c60605a)
+Uuden sivun käyttöönotto `sudo a2ensite kreatiininc.conf` ja käynnistys uudestaan `sudo systemctl reload apache2`. Ja homma toimii curlilla: 
+![image](https://github.com/user-attachments/assets/797c8ea5-e793-44ae-91c5-5ffaeea78768)
+
+Siirryn `publicwsgi/` hakemistoon ja luon uuden hakemiston virtualenviä varten: 
+![image](https://github.com/user-attachments/assets/ee4e7c83-e7a3-4278-a656-c0412318817c)
+Käynnistän virtuaaliympäristön ja varmistan että pip on oikeassa paikassa ` source env/bin/activate` sekä ` which pip`:
+![image](https://github.com/user-attachments/assets/8a4ec18b-2ee9-4e9e-9de7-94ee3387c6ee)
+Tämän jälkeen requirements.txt tiedoston luominen, laitan sinne sanan "django" ja varmistan catilla ennen asennusta: 
+![image](https://github.com/user-attachments/assets/0f64d3c7-e11b-4b33-9f2f-8eff3dae3c20)
+
+Seuraavana asennus `pip install -r requirements.txt` ja testi `django-admin --version` .
+![image](https://github.com/user-attachments/assets/d8984b31-5e53-4fe0-aecf-b5f306b04d78)
+
+Tällä kertaa koitan luoda projektini kreatiininc kansion sisään sillä pakottamalla sen vanhaan kansioon en onnistunut tehtävässä. 
+
+Nyt muokkaan kreatiinin.conf tiedostoa `sudoedit /etc/apache2/sites-available/kreatiininc.conf`. Mielestäni polut ovat oikein, käyn ne kuitenkin vielä kerran läpi. 
+![image](https://github.com/user-attachments/assets/98a541b0-a8b0-4ba4-b41e-8bf8972643df)
+Eli tein ehkä kuitenkin ensimmäisellä kerralla oikein, toki se ei toiminut suoraan joten epäilen sitäkin. Nyt kokeilen kuitenkin muuttaa polkua .conf tiedostossa jos se toimisi silti tällä kertaa. Pystyn kuitenkin siirtämään  `static` hakemistoa tarvittaessa, muistan vain muuttaa sen .conf tiedostoon myös. Kokeilin nyt muuttaa polut: 
+![image](https://github.com/user-attachments/assets/bb5b5cd1-8acf-4147-9221-a6a6fb4da92b)
+
+WSGI moduulin asensin jo eilen joten nyt tarkistan .conf tiedoston ja käynnistän apachen uudestaan: 
+![image](https://github.com/user-attachments/assets/fd7daf86-5462-48fb-82c0-3d4e32ce8a89)
+
+Totuuden hetki curl komennolla, jos ei toimi joudun tekemään tehtävän palattuani. 
+
+... Ja ei tapahdu mitään. `curl` palauttaa vain Default joten joudun perehtymään asiaan paremmin matkani aikana puhelimella. ![image](https://github.com/user-attachments/assets/cd47596d-86a7-4da5-8d4c-f8b20dd22a7e)
+Huomasin myös että en ollut vaihtanut python kansion versiota. Se ei kuitenkaan muuttanut mitään. En tiedä vaikuttaako apachen antama DocumentRoot jotenkin asiaan :![image](https://github.com/user-attachments/assets/912c16d6-e710-43e4-8787-5f982ed52199)
+Jotenkin luulen että polut ovat väärin/tiedostot ovat väärissä paikoissa. En nyt keksi mikä on syynä. 
+
+Lueskeltuani hetken conf tiedostoa `static` tulee polusta `TDIR` ja sieltä pitäisi löytyä `/static` joten siirrän sen manage.py tiedoston kanssa samaan. Nyt hakemisto näyttää tältä: 
+![image](https://github.com/user-attachments/assets/f56aa1e2-3d04-4532-84a0-4cb0f7f8de5d)
+Apachen uudelleenkäynnistys ja ei siltikään toimi. 
+Muutin myös hakemistorakennettani toisenlaiseksi, ei auttanut. Jokin on säädöissä pielessä en kyllä keksi mitä. Nykyinen hakemistorakenne: ![image](https://github.com/user-attachments/assets/fec33242-3a5e-43d3-a7a0-83ce2f3a4a04) 
+![image](https://github.com/user-attachments/assets/516e380b-56b0-4c70-82c7-8d401755e330) ja .conf tiedosto: 
+
+![image](https://github.com/user-attachments/assets/671b0883-34f0-45b5-9ba6-674298dd64d0)´
+Tarkastin hakemistojen reitit, conf tiedostot yms monta kertaa. Ainoastaan kreatiininc.conf on päällä. Silt localhost sivu on vain sivu jossa lukee "Default" kuten olen asettanut aiemmin. Ehkä asennukset menneet pieleen ei hajua.
+
+Palaan tehtävään palattuani maanantaina yöllä :) Lopetan nyt **rannekello 1000 25.9.2024** .
+
 
