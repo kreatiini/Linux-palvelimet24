@@ -128,4 +128,51 @@ Tarkastin hakemistojen reitit, conf tiedostot yms monta kertaa. Ainoastaan kreat
 
 Palaan tehtävään palattuani maanantaina yöllä :) Lopetan nyt **rannekello 1000 25.9.2024** .
 
+## Yritys nro3 Django Production install- **rannekello 0026 1.10.24**
+Suoraan lentokentältä kone tulille ja uutta yritystä. Mikäli en onnistu tälläkään kertaa palautan tehtävän ja teen keskiviikkona töiden jälkeen loppuun toisella virtuaalikoneella.
+Aloitin nopeilla `apt-get update` ja `apt-get upgrade` komennoilla. Tämän jälkeenm
+Localhostissa näkyi Default sivu eli Apache toimii kuten aiemmin. 
+Tämän jälkeen tein uuden hakemiston `/julkinen` ja loin sinne hakemistot `/kreatiininc/static/`.
+![image](https://github.com/user-attachments/assets/2a92134a-6b67-4420-8372-93fc16acf69f)
 
+Muokkasin kreatiininc conf tiedostoa sudoeditillä:
+![image](https://github.com/user-attachments/assets/9ed9943e-c944-497d-89cb-390cb543ad61)
+
+![image](https://github.com/user-attachments/assets/51fd966e-e374-4ef0-b6fc-235943a8bcd6)
+
+Sen jälkeen apachen muut sivut pois, kreatiininc päälle, configtest ja apache uudelleen käyntiin:
+![image](https://github.com/user-attachments/assets/993bedb6-b3d9-42ca-b441-57c842773bb4)
+![image](https://github.com/user-attachments/assets/ceaf63d2-a0ca-4bff-84e2-4d9a209865f9)
+![image](https://github.com/user-attachments/assets/9fe1af65-8fca-47cb-8063-4f855e8528f2)
+Ja selaimella localhost/static auki: ![image](https://github.com/user-attachments/assets/ace9364d-4df4-4ca1-9c1b-951f487a4893)
+
+Tämän jälkeen lisäsin virtualenvin `/julkinen` hakemistoon:
+![image](https://github.com/user-attachments/assets/ca64f912-eda9-4b51-b07e-2e75d68a6132)
+Sitten käynnistin sen, tarkistin tietty oikean pip paikan: ![image](https://github.com/user-attachments/assets/26641ee6-1e5c-4a41-8b18-45f7628f25c4)
+Asensin djangon ja tarkistin version:
+![image](https://github.com/user-attachments/assets/3bd24726-1642-4391-ad5a-1f9b7995deb8)
+
+Aloitin uuden projektin djangolla: 
+![image](https://github.com/user-attachments/assets/b8d8919f-7a6a-41fe-b502-1bec19df410f)
+Muokkasin conf tiedostoa [Karvisen](https://terokarvinen.com/2022/deploy-django/) ohjeiden mukaan:
+![image](https://github.com/user-attachments/assets/28831608-efec-4869-94cd-fa0878a85fe0)
+
+Ja varmistin että wsgi on asennettuna, tarkistin syntaksin ja käynnistin apachen uudestaan:
+![image](https://github.com/user-attachments/assets/9c011d65-c2f8-4a3a-a076-68a26fd78e58)
+
+Ja en taaskaan onnistunut joten päädyin vielä siirtämään kreatiiniproj kansion kreatiininc kansion sisälle. Uusi hakemistorakenne ei auttanut vaikka muutin conf tiedostoani: 
+![image](https://github.com/user-attachments/assets/132bbd5f-6a0e-4821-aaab-d0507840fd2b)
+Käyn vielä läpi pyydetyt hakemistot ja vertaan niitä omiini:
+Ensin Djangon manage.py polku: 
+![image](https://github.com/user-attachments/assets/17d02bf6-7346-49b8-a998-c294423e974b)
+Seuraavaksi polku wsgi.py:
+![image](https://github.com/user-attachments/assets/5ae54be0-80f9-41e2-a146-30e6eac1af18)
+Viimeisenä site-packages:
+![image](https://github.com/user-attachments/assets/78972c65-3438-4434-bd17-967a8f5345cc)
+
+Mielestäni hakemistot täsmäävät: 
+![image](https://github.com/user-attachments/assets/cb92ba62-d576-4e36-9e7a-45db12011377)
+
+Poistin kaikki sivut käytöstä a2dissite, käynnistin uudestaan apachen, laitoin kreatiininc.conf käyttöön ja käynnistin uudestaan. Edelleen localhost sivuna aukeaa default. 
+
+Totean että tehtävä ei onnistunut, yritän ehtiä töissä läppärillä toisella virtuaalikoneella suorittamaan tehtävän kokonaan maaliin huomenna. Herätys kello 6 ja 24h töitä tiedossa. Aika luovuttaa tältä erää. **Rannekello 0122 1.10.2024** 
