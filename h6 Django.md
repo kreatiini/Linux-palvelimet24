@@ -176,3 +176,5 @@ Mielestäni hakemistot täsmäävät:
 Poistin kaikki sivut käytöstä a2dissite, käynnistin uudestaan apachen, laitoin kreatiininc.conf käyttöön ja käynnistin uudestaan. Edelleen localhost sivuna aukeaa default. 
 
 Totean että tehtävä ei onnistunut, yritän ehtiä töissä läppärillä toisella virtuaalikoneella suorittamaan tehtävän kokonaan maaliin huomenna. Herätys kello 6 ja 24h töitä tiedossa. Aika luovuttaa tältä erää. **Rannekello 0122 1.10.2024** 
+
+En ehtinyt tarkastella tehtävää ennen töitä. Katsotaan ennen luentoa huomenna onnistuuko tehtävän tekeminen.
