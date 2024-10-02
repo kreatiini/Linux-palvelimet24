@@ -177,4 +177,6 @@ Poistin kaikki sivut käytöstä a2dissite, käynnistin uudestaan apachen, laito
 
 Totean että tehtävä ei onnistunut, yritän ehtiä töissä läppärillä toisella virtuaalikoneella suorittamaan tehtävän kokonaan maaliin huomenna. Herätys kello 6 ja 24h töitä tiedossa. Aika luovuttaa tältä erää. **Rannekello 0122 1.10.2024** 
 
-En ehtinyt tarkastella tehtävää ennen töitä. Katsotaan ennen luentoa huomenna onnistuuko tehtävän tekeminen.
+En ehtinyt tarkastella tehtävää ennen töitä. Katsotaan ennen luentoa huomenna onnistuuko tehtävän tekeminen.¨
+
+**EDIT klo 1912 2.10.24** Vika oli conf tiedostossa jossa oli alussa tehty static määritys vanhan lisäksi... 
