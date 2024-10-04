@@ -159,9 +159,9 @@ Aloitan asentamalla lshw:n komennolla `sudo apt-get install lshw` jonka jälkeen
 - **Volume** kohdasta näkee miten massamuisti on jaettu. Tässä tapauksessa 37gb on tavallisessa tiedostokäytössä ja 12gb on swap muistin käytössä. Swap muisti toimii keskusmuistin laajennuksena. 
 
 ## Lähteet:
-Tehtävät perustuvat Tero Karvisen Linux Palvelimet kurssin tehtäviin.https://terokarvinen.com/linux-palvelimet/#h2-komentaja-pingviini
+Tehtävät perustuvat Tero Karvisen Linux Palvelimet kurssin tehtäviin. https://terokarvinen.com/linux-palvelimet/#h2-komentaja-pingviini
 Tero Karvinen, Command Line Basics Revisited: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
-Seuraavana piti valita kolme uutta komentoriviohjelmaa sekä testata niitä. Aloitin siis tiedonhaun millaisia ohjelmia haluaisin kokeilla. Googlasin "Linux CLI tools" ja törmäsin Github repositorioon nimeltä [awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps) 
+[awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps) 
 [Timetrap](https://github.com/samg/timetrap)
 [Speedtest-cli](https://www.speedtest.net/apps/cli)
 [Glances](https://github.com/nicolargo/glances/blob/master/README.rst)
