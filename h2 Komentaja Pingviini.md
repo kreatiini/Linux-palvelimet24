@@ -159,17 +159,17 @@ Aloitan asentamalla lshw:n komennolla `sudo apt-get install lshw` jonka jälkeen
 - **Volume** kohdasta näkee miten massamuisti on jaettu. Tässä tapauksessa 37gb on tavallisessa tiedostokäytössä ja 12gb on swap muistin käytössä. Swap muisti toimii keskusmuistin laajennuksena. 
 
 ## Lähteet:
-Tehtävät perustuvat Tero Karvisen Linux Palvelimet kurssin tehtäviin. https://terokarvinen.com/linux-palvelimet/#h2-komentaja-pingviini
-Tero Karvinen, Command Line Basics Revisited: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
-[awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps) 
-[Timetrap](https://github.com/samg/timetrap)
-[Speedtest-cli](https://www.speedtest.net/apps/cli)
-[Glances](https://github.com/nicolargo/glances/blob/master/README.rst)
-https://stackoverflow.com/questions/75602063/pip-install-r-requirements-txt-is-failing-this-environment-is-externally-mana
-https://pip.pypa.io/en/stable/installation/
-https://docs.python-guide.org/starting/install3/linux/
-https://www.networkworld.com/article/972132/using-the-linux-ncdu-command-to-view-your-disk-usage.html
-https://docs.python.org/3/library/venv.html
-https://github.com/neovim/neovim/blob/master/INSTALL.md
-https://www.networkworld.com/article/972132/using-the-linux-ncdu-command-to-view-your-disk-usage.html
-“Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html”
+- Tehtävät perustuvat Tero Karvisen Linux Palvelimet kurssin tehtäviin. https://terokarvinen.com/linux-palvelimet/#h2-komentaja-pingviini
+- Tero Karvinen, Command Line Basics Revisited: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
+- [awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps) 
+- [Timetrap](https://github.com/samg/timetrap)
+- [Speedtest-cli](https://www.speedtest.net/apps/cli)
+- [Glances](https://github.com/nicolargo/glances/blob/master/README.rst)
+- https://stackoverflow.com/questions/75602063/pip-install-r-requirements-txt-is-failing-this-environment-is-externally-mana
+- https://pip.pypa.io/en/stable/installation/
+- https://docs.python-guide.org/starting/install3/linux/
+- https://www.networkworld.com/article/972132/using-the-linux-ncdu-command-to-view-your-disk-usage.html
+- https://docs.python.org/3/library/venv.html
+- https://github.com/neovim/neovim/blob/master/INSTALL.md
+- https://www.networkworld.com/article/972132/using-the-linux-ncdu-command-to-view-your-disk-usage.html
+- “Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html”
