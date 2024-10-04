@@ -173,3 +173,4 @@ Aloitan asentamalla lshw:n komennolla `sudo apt-get install lshw` jonka jälkeen
 - https://github.com/neovim/neovim/blob/master/INSTALL.md
 - https://www.networkworld.com/article/972132/using-the-linux-ncdu-command-to-view-your-disk-usage.html
 - “Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html”
+  [**EDIT 4.10.2024 korjattu lähdeluettelon ulkoasu selkeämmäksi**]
