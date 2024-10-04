@@ -179,4 +179,5 @@ Totean että tehtävä ei onnistunut, yritän ehtiä töissä läppärillä tois
 
 En ehtinyt tarkastella tehtävää ennen töitä. Katsotaan ennen luentoa huomenna onnistuuko tehtävän tekeminen.¨
 
-**EDIT klo 1912 2.10.24** Vika oli conf tiedostossa jossa oli alussa tehty static määritys vanhan lisäksi... 
+[**EDIT klo 1912 2.10.24** Vika oli conf tiedostossa jossa oli virheellistä tekstiä. ]
+[**EDIT 4.10.24 Lisätty lähdeluettelo**]
